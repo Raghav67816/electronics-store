@@ -1,0 +1,1352 @@
+[
+    {
+        "name": "USB Flash Drive",
+        "category": "Storage",
+        "price": 158.97,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-06-16",
+                "review_text": "Battery life could be better."
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2025-03-25",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2025-03-01",
+                "review_text": "Battery life could be better."
+            }
+        ],
+        "rating": 1.5,
+        "date_published": "2024-05-21",
+        "retailer": "Digital Plaza",
+        "is_available": true
+    },
+    {
+        "name": "Smartphone",
+        "category": "Electronics",
+        "price": 1531.72,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2024-12-02",
+                "review_text": "Great quality!"
+            }
+        ],
+        "rating": 2.9,
+        "date_published": "2024-05-29",
+        "retailer": "ElectroMart",
+        "is_available": false
+    },
+    {
+        "name": "Camera",
+        "category": "Photography",
+        "price": 1266.43,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2025-03-06",
+                "review_text": "Great quality!"
+            },
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2025-03-06",
+                "review_text": "Excellent customer service."
+            }
+        ],
+        "rating": 2.0,
+        "date_published": "2023-10-21",
+        "retailer": "TechWorld",
+        "is_available": true
+    },
+    {
+        "name": "USB Flash Drive",
+        "category": "Storage",
+        "price": 557.52,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2025-01-11",
+                "review_text": "Worth the price."
+            },
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2024-08-18",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-07-27",
+                "review_text": "Worth the price."
+            }
+        ],
+        "rating": 2.4,
+        "date_published": "2024-08-28",
+        "retailer": "DeviceSpot",
+        "is_available": true
+    },
+    {
+        "name": "Router",
+        "category": "Networking",
+        "price": 1601.1,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2024-10-28",
+                "review_text": "Battery life could be better."
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2024-12-06",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2024-10-19",
+                "review_text": "Not as described."
+            }
+        ],
+        "rating": 3.5,
+        "date_published": "2024-05-23",
+        "retailer": "GadgetHub",
+        "is_available": true
+    },
+    {
+        "name": "Gaming Console",
+        "category": "Gaming",
+        "price": 56.79,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2025-04-29",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2024-11-29",
+                "review_text": "Great quality!"
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-02-15",
+                "review_text": "Fast shipping!"
+            },
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2024-10-05",
+                "review_text": "Great quality!"
+            }
+        ],
+        "rating": 4.4,
+        "date_published": "2024-07-03",
+        "retailer": "TechWorld",
+        "is_available": false
+    },
+    {
+        "name": "External Hard Drive",
+        "category": "Storage",
+        "price": 896.22,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2024-11-01",
+                "review_text": "Not as described."
+            }
+        ],
+        "rating": 4.3,
+        "date_published": "2025-06-18",
+        "retailer": "GadgetHub",
+        "is_available": false
+    },
+    {
+        "name": "Monitor",
+        "category": "Electronics",
+        "price": 993.53,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-06-06",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-02-07",
+                "review_text": "Worth the price."
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2024-09-12",
+                "review_text": "Fast shipping!"
+            }
+        ],
+        "rating": 3.6,
+        "date_published": "2024-06-03",
+        "retailer": "GadgetHub",
+        "is_available": false
+    },
+    {
+        "name": "Bluetooth Speaker",
+        "category": "Audio",
+        "price": 277.8,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2024-09-24",
+                "review_text": "Great quality!"
+            }
+        ],
+        "rating": 2.5,
+        "date_published": "2025-01-11",
+        "retailer": "TechWorld",
+        "is_available": false
+    },
+    {
+        "name": "Keyboard",
+        "category": "Accessories",
+        "price": 1305.7,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2024-12-19",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2024-08-26",
+                "review_text": "Worth the price."
+            }
+        ],
+        "rating": 1.5,
+        "date_published": "2024-03-16",
+        "retailer": "Digital Plaza",
+        "is_available": false
+    },
+    {
+        "name": "Tablet",
+        "category": "Electronics",
+        "price": 1385.4,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-07-09",
+                "review_text": "Excellent customer service."
+            }
+        ],
+        "rating": 4.8,
+        "date_published": "2023-10-01",
+        "retailer": "ElectroMart",
+        "is_available": true
+    },
+    {
+        "name": "External Hard Drive",
+        "category": "Storage",
+        "price": 253.73,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-01-15",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-06-11",
+                "review_text": "Worth the price."
+            },
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2025-03-09",
+                "review_text": "Battery life could be better."
+            },
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2025-03-28",
+                "review_text": "Great quality!"
+            }
+        ],
+        "rating": 3.7,
+        "date_published": "2023-06-29",
+        "retailer": "DeviceSpot",
+        "is_available": true
+    },
+    {
+        "name": "Graphics Card",
+        "category": "Electronics",
+        "price": 320.74,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-06-27",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-07-25",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2025-07-22",
+                "review_text": "Great quality!"
+            },
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2025-03-01",
+                "review_text": "Battery life could be better."
+            }
+        ],
+        "rating": 3.1,
+        "date_published": "2024-08-11",
+        "retailer": "DeviceSpot",
+        "is_available": true
+    },
+    {
+        "name": "Laptop",
+        "category": "Electronics",
+        "price": 891.11,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-07-08",
+                "review_text": "Worth the price."
+            }
+        ],
+        "rating": 2.2,
+        "date_published": "2024-05-11",
+        "retailer": "Digital Plaza",
+        "is_available": false
+    },
+    {
+        "name": "Monitor",
+        "category": "Electronics",
+        "price": 1823.75,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-06-09",
+                "review_text": "Great quality!"
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2025-02-03",
+                "review_text": "Not as described."
+            }
+        ],
+        "rating": 1.6,
+        "date_published": "2023-05-15",
+        "retailer": "DeviceSpot",
+        "is_available": true
+    },
+    {
+        "name": "Graphics Card",
+        "category": "Electronics",
+        "price": 1082.7,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2024-11-21",
+                "review_text": "Worth the price."
+            },
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-06-03",
+                "review_text": "Not as described."
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-03-05",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2024-10-27",
+                "review_text": "Excellent customer service."
+            }
+        ],
+        "rating": 1.4,
+        "date_published": "2024-05-11",
+        "retailer": "TechWorld",
+        "is_available": true
+    },
+    {
+        "name": "Smart TV",
+        "category": "Electronics",
+        "price": 1386.56,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-01-31",
+                "review_text": "Great quality!"
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2024-12-18",
+                "review_text": "Worth the price."
+            },
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-02-01",
+                "review_text": "Great quality!"
+            },
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2024-10-30",
+                "review_text": "Excellent customer service."
+            }
+        ],
+        "rating": 3.4,
+        "date_published": "2024-09-29",
+        "retailer": "GadgetHub",
+        "is_available": false
+    },
+    {
+        "name": "Power Bank",
+        "category": "Accessories",
+        "price": 1585.35,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2024-10-14",
+                "review_text": "Battery life could be better."
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2024-12-05",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2024-11-05",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-07-28",
+                "review_text": "Battery life could be better."
+            }
+        ],
+        "rating": 4.4,
+        "date_published": "2025-02-01",
+        "retailer": "Digital Plaza",
+        "is_available": true
+    },
+    {
+        "name": "Smartphone",
+        "category": "Electronics",
+        "price": 1601.75,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2024-09-19",
+                "review_text": "Fast shipping!"
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-07-23",
+                "review_text": "Battery life could be better."
+            }
+        ],
+        "rating": 3.8,
+        "date_published": "2024-03-30",
+        "retailer": "TechWorld",
+        "is_available": false
+    },
+    {
+        "name": "Fitness Tracker",
+        "category": "Wearables",
+        "price": 853.45,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-04-21",
+                "review_text": "Battery life could be better."
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-03-14",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-04-04",
+                "review_text": "Battery life could be better."
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-01-09",
+                "review_text": "Great quality!"
+            }
+        ],
+        "rating": 4.7,
+        "date_published": "2024-06-23",
+        "retailer": "DeviceSpot",
+        "is_available": true
+    },
+    {
+        "name": "Monitor",
+        "category": "Electronics",
+        "price": 490.35,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-03-02",
+                "review_text": "Fast shipping!"
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2025-04-19",
+                "review_text": "Great quality!"
+            }
+        ],
+        "rating": 2.0,
+        "date_published": "2022-12-13",
+        "retailer": "ElectroMart",
+        "is_available": false
+    },
+    {
+        "name": "Router",
+        "category": "Networking",
+        "price": 1317.16,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2024-12-21",
+                "review_text": "Fast shipping!"
+            }
+        ],
+        "rating": 3.8,
+        "date_published": "2024-03-06",
+        "retailer": "Digital Plaza",
+        "is_available": false
+    },
+    {
+        "name": "Tablet",
+        "category": "Electronics",
+        "price": 1764.08,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2025-02-16",
+                "review_text": "Highly recommend."
+            }
+        ],
+        "rating": 4.7,
+        "date_published": "2023-12-28",
+        "retailer": "ElectroMart",
+        "is_available": false
+    },
+    {
+        "name": "Drone",
+        "category": "Electronics",
+        "price": 1808.12,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2025-01-03",
+                "review_text": "Not as described."
+            }
+        ],
+        "rating": 1.8,
+        "date_published": "2022-11-30",
+        "retailer": "ElectroMart",
+        "is_available": false
+    },
+    {
+        "name": "Printer",
+        "category": "Office",
+        "price": 424.82,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2025-03-06",
+                "review_text": "Worth the price."
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-01-09",
+                "review_text": "Battery life could be better."
+            }
+        ],
+        "rating": 4.4,
+        "date_published": "2023-04-28",
+        "retailer": "GadgetHub",
+        "is_available": true
+    },
+    {
+        "name": "External Hard Drive",
+        "category": "Storage",
+        "price": 1724.03,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2024-09-06",
+                "review_text": "Not as described."
+            },
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-07-08",
+                "review_text": "Great quality!"
+            },
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2025-04-17",
+                "review_text": "Worth the price."
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-05-20",
+                "review_text": "Fast shipping!"
+            }
+        ],
+        "rating": 4.8,
+        "date_published": "2025-01-17",
+        "retailer": "DeviceSpot",
+        "is_available": false
+    },
+    {
+        "name": "Printer",
+        "category": "Office",
+        "price": 313.68,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-06-27",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-07-20",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2024-10-24",
+                "review_text": "Highly recommend."
+            }
+        ],
+        "rating": 1.2,
+        "date_published": "2024-04-16",
+        "retailer": "ElectroMart",
+        "is_available": false
+    },
+    {
+        "name": "Smartwatch",
+        "category": "Wearables",
+        "price": 1488.01,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2025-02-03",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2024-11-09",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2024-09-18",
+                "review_text": "Great quality!"
+            }
+        ],
+        "rating": 2.7,
+        "date_published": "2023-09-14",
+        "retailer": "TechWorld",
+        "is_available": false
+    },
+    {
+        "name": "Monitor",
+        "category": "Electronics",
+        "price": 1842.6,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-02-28",
+                "review_text": "Battery life could be better."
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-04-08",
+                "review_text": "Not as described."
+            },
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2024-12-14",
+                "review_text": "Fast shipping!"
+            },
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2024-10-26",
+                "review_text": "Great quality!"
+            }
+        ],
+        "rating": 4.7,
+        "date_published": "2022-12-19",
+        "retailer": "ElectroMart",
+        "is_available": true
+    },
+    {
+        "name": "Router",
+        "category": "Networking",
+        "price": 202.86,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-01-20",
+                "review_text": "Worth the price."
+            }
+        ],
+        "rating": 2.9,
+        "date_published": "2024-02-15",
+        "retailer": "Digital Plaza",
+        "is_available": true
+    },
+    {
+        "name": "Monitor",
+        "category": "Electronics",
+        "price": 1987.99,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2024-10-15",
+                "review_text": "Not as described."
+            }
+        ],
+        "rating": 4.3,
+        "date_published": "2023-11-10",
+        "retailer": "Digital Plaza",
+        "is_available": true
+    },
+    {
+        "name": "USB Flash Drive",
+        "category": "Storage",
+        "price": 845.93,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-06-28",
+                "review_text": "Worth the price."
+            }
+        ],
+        "rating": 4.3,
+        "date_published": "2023-01-07",
+        "retailer": "DeviceSpot",
+        "is_available": true
+    },
+    {
+        "name": "Fitness Tracker",
+        "category": "Wearables",
+        "price": 1591.83,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2024-11-13",
+                "review_text": "Great quality!"
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2024-09-25",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2025-06-20",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2024-08-25",
+                "review_text": "Not as described."
+            }
+        ],
+        "rating": 1.5,
+        "date_published": "2024-02-06",
+        "retailer": "GadgetHub",
+        "is_available": true
+    },
+    {
+        "name": "Power Bank",
+        "category": "Accessories",
+        "price": 1241.87,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2025-06-01",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2025-05-27",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2024-09-24",
+                "review_text": "Worth the price."
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2024-10-30",
+                "review_text": "Battery life could be better."
+            }
+        ],
+        "rating": 3.7,
+        "date_published": "2025-06-17",
+        "retailer": "DeviceSpot",
+        "is_available": true
+    },
+    {
+        "name": "Printer",
+        "category": "Office",
+        "price": 399.06,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-05-04",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2025-06-29",
+                "review_text": "Fast shipping!"
+            }
+        ],
+        "rating": 3.3,
+        "date_published": "2024-12-04",
+        "retailer": "DeviceSpot",
+        "is_available": true
+    },
+    {
+        "name": "Wireless Mouse",
+        "category": "Accessories",
+        "price": 77.04,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-01-08",
+                "review_text": "Fast shipping!"
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-01-12",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2024-12-11",
+                "review_text": "Excellent customer service."
+            }
+        ],
+        "rating": 1.2,
+        "date_published": "2023-07-25",
+        "retailer": "Digital Plaza",
+        "is_available": false
+    },
+    {
+        "name": "Camera",
+        "category": "Photography",
+        "price": 1362.8,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-01-24",
+                "review_text": "Fast shipping!"
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2024-11-01",
+                "review_text": "Battery life could be better."
+            }
+        ],
+        "rating": 1.4,
+        "date_published": "2023-12-07",
+        "retailer": "Digital Plaza",
+        "is_available": false
+    },
+    {
+        "name": "Wireless Mouse",
+        "category": "Accessories",
+        "price": 968.6,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-07-12",
+                "review_text": "Worth the price."
+            },
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-02-01",
+                "review_text": "Battery life could be better."
+            }
+        ],
+        "rating": 2.9,
+        "date_published": "2023-10-21",
+        "retailer": "TechWorld",
+        "is_available": true
+    },
+    {
+        "name": "Smartphone",
+        "category": "Electronics",
+        "price": 1783.93,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2025-06-02",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2024-12-11",
+                "review_text": "Fast shipping!"
+            },
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-03-27",
+                "review_text": "Fast shipping!"
+            }
+        ],
+        "rating": 4.9,
+        "date_published": "2023-12-21",
+        "retailer": "TechWorld",
+        "is_available": false
+    },
+    {
+        "name": "Smart TV",
+        "category": "Electronics",
+        "price": 562.71,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-06-10",
+                "review_text": "Fast shipping!"
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2024-12-29",
+                "review_text": "Worth the price."
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-01-14",
+                "review_text": "Worth the price."
+            }
+        ],
+        "rating": 4.7,
+        "date_published": "2023-12-05",
+        "retailer": "DeviceSpot",
+        "is_available": true
+    },
+    {
+        "name": "Graphics Card",
+        "category": "Electronics",
+        "price": 1687.44,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-06-20",
+                "review_text": "Not as described."
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2025-04-28",
+                "review_text": "Not as described."
+            },
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2025-01-04",
+                "review_text": "Great quality!"
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2024-09-11",
+                "review_text": "Great quality!"
+            }
+        ],
+        "rating": 3.9,
+        "date_published": "2024-12-26",
+        "retailer": "GadgetHub",
+        "is_available": false
+    },
+    {
+        "name": "Power Bank",
+        "category": "Accessories",
+        "price": 731.67,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2025-04-05",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2024-08-21",
+                "review_text": "Great quality!"
+            },
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2024-09-29",
+                "review_text": "Excellent customer service."
+            }
+        ],
+        "rating": 2.0,
+        "date_published": "2023-05-29",
+        "retailer": "TechWorld",
+        "is_available": false
+    },
+    {
+        "name": "Smart TV",
+        "category": "Electronics",
+        "price": 497.28,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-07-18",
+                "review_text": "Highly recommend."
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2025-02-09",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2025-03-29",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2024-09-08",
+                "review_text": "Battery life could be better."
+            }
+        ],
+        "rating": 2.1,
+        "date_published": "2024-10-01",
+        "retailer": "GadgetHub",
+        "is_available": true
+    },
+    {
+        "name": "Router",
+        "category": "Networking",
+        "price": 1465.26,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-06-29",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2024-09-02",
+                "review_text": "Great quality!"
+            }
+        ],
+        "rating": 1.6,
+        "date_published": "2025-06-05",
+        "retailer": "ElectroMart",
+        "is_available": true
+    },
+    {
+        "name": "Gaming Console",
+        "category": "Gaming",
+        "price": 651.68,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2025-04-16",
+                "review_text": "Highly recommend."
+            }
+        ],
+        "rating": 3.8,
+        "date_published": "2022-12-06",
+        "retailer": "DeviceSpot",
+        "is_available": false
+    },
+    {
+        "name": "Smartwatch",
+        "category": "Wearables",
+        "price": 991.94,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2024-12-09",
+                "review_text": "Not as described."
+            },
+            {
+                "username": "techlover",
+                "profile_pic": "https://example.com/profiles/techlover.png",
+                "date_posted": "2024-09-30",
+                "review_text": "Great quality!"
+            },
+            {
+                "username": "buyer101",
+                "profile_pic": "https://example.com/profiles/buyer101.png",
+                "date_posted": "2025-03-21",
+                "review_text": "Battery life could be better."
+            },
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-02-06",
+                "review_text": "Great quality!"
+            }
+        ],
+        "rating": 2.6,
+        "date_published": "2025-02-22",
+        "retailer": "TechWorld",
+        "is_available": false
+    },
+    {
+        "name": "Headphones",
+        "category": "Audio",
+        "price": 1520.82,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2024-12-17",
+                "review_text": "Not as described."
+            },
+            {
+                "username": "gadgetgeek",
+                "profile_pic": "https://example.com/profiles/gadgetgeek.png",
+                "date_posted": "2025-01-11",
+                "review_text": "Excellent customer service."
+            }
+        ],
+        "rating": 4.6,
+        "date_published": "2023-12-12",
+        "retailer": "GadgetHub",
+        "is_available": true
+    },
+    {
+        "name": "Drone",
+        "category": "Electronics",
+        "price": 179.3,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-04-29",
+                "review_text": "Battery life could be better."
+            },
+            {
+                "username": "reviewking",
+                "profile_pic": "https://example.com/profiles/reviewking.png",
+                "date_posted": "2025-06-19",
+                "review_text": "Excellent customer service."
+            },
+            {
+                "username": "digitaldiva",
+                "profile_pic": "https://example.com/profiles/digitaldiva.png",
+                "date_posted": "2025-05-13",
+                "review_text": "Fast shipping!"
+            }
+        ],
+        "rating": 1.6,
+        "date_published": "2022-12-05",
+        "retailer": "GadgetHub",
+        "is_available": false
+    },
+    {
+        "name": "Smartwatch",
+        "category": "Wearables",
+        "price": 1820.46,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "shopaholic",
+                "profile_pic": "https://example.com/profiles/shopaholic.png",
+                "date_posted": "2024-10-10",
+                "review_text": "Worth the price."
+            }
+        ],
+        "rating": 1.9,
+        "date_published": "2025-07-04",
+        "retailer": "TechWorld",
+        "is_available": false
+    },
+    {
+        "name": "Headphones",
+        "category": "Audio",
+        "price": 106.92,
+        "product_img": "https://fillthis.io/i/600x400",
+        "reviews": [
+            {
+                "username": "qualityhunter",
+                "profile_pic": "https://example.com/profiles/qualityhunter.png",
+                "date_posted": "2025-06-30",
+                "review_text": "Not as described."
+            }
+        ],
+        "rating": 4.8,
+        "date_published": "2024-08-29",
+        "retailer": "Digital Plaza",
+        "is_available": true
+    }
+]
