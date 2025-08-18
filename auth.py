@@ -26,7 +26,7 @@ db_manager = DBManager()
 def signup(request: Request, response_class=HTMLResponse):
 	return templates.TemplateResponse(
 		request=request, name='signup.html'
-		)
+	)
 
 
 @auth_router.post("/signup")
@@ -95,3 +95,13 @@ def login(
     else:
         print(res.json())
         
+
+@auth_router.get("/logout")
+def logout(request: Request):
+    """Logout the user by clearing cookies"""
+    response = RedirectResponse(url="/", status_code=302)
+    response.delete_cookie(key='token')
+    response.delete_cookie(key='expiresIn') 
+    response.delete_cookie(key='refreshToken')
+    response.delete_cookie(key='uid')
+    return response

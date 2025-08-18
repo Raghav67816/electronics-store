@@ -59,6 +59,7 @@
                 </span>
             </div>
             <button
+                onclick="proceedToCheckout()"
                 class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-lg transition-colors duration-200">
                 Proceed to Checkout
             </button>
@@ -98,6 +99,15 @@
       totalElem.textContent = `₹${newTotal.toFixed(2)}`;
       item_quant.textContent = newQuant.toString();
     }
+  }
+
+  function proceedToCheckout() {
+    // Create a form and submit it to create an order
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = '/orders/create';
+    document.body.appendChild(form);
+    form.submit();
   }
 </script>
 

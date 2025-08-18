@@ -1,0 +1,172 @@
+{% extends 'base.html' %}
+
+{% block title %}My Orders{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-6xl">
+    <div class="flex items-center justify-between mb-8">
+        <h1 class="text-3xl font-bold text-gray-800">My Orders</h1>
+        <div class="flex items-center space-x-4">
+            <form method="GET" action="/orders">
+                <select name="status" onchange="this.form.submit()" class="px-4 py-2 border border-gray-300 rounded-lg text-sm focus:ring-2 focus:ring-teal-500 focus:border-teal-500">
+                    <option value="All Orders" {% if current_filter == 'All Orders' %}selected{% endif %}>All Orders</option>
+                    <option value="Delivered" {% if current_filter == 'Delivered' %}selected{% endif %}>Delivered</option>
+                    <option value="In Transit" {% if current_filter == 'In Transit' %}selected{% endif %}>In Transit</option>
+                    <option value="Processing" {% if current_filter == 'Processing' %}selected{% endif %}>Processing</option>
+                    <option value="Cancelled" {% if current_filter == 'Cancelled' %}selected{% endif %}>Cancelled</option>
+                </select>
+            </form>
+            <button class="px-4 py-2 text-sm text-teal-600 border border-teal-600 rounded-lg hover:bg-teal-50 transition-colors">
+                Export Orders
+            </button>
+        </div>
+    </div>
+
+    {% if orders %}
+        <div class="space-y-6">
+            {% for order in orders %}
+            <div class="bg-white rounded-lg shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-200">
+                <!-- Order Header -->
+                <div class="bg-gray-50 px-6 py-4 border-b border-gray-200">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+                        <div class="flex items-center space-x-4 mb-2 sm:mb-0">
+                            <div>
+                                <h3 class="text-lg font-semibold text-gray-800">Order #{{ order.order_id }}</h3>
+                                <p class="text-sm text-gray-500">Placed on {{ order.order_date.strftime('%B %d, %Y') if order.order_date else 'N/A' }}</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col sm:items-end">
+                            <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium
+                                {% if order.status == 'Delivered' %}bg-green-100 text-green-800
+                                {% elif order.status == 'In Transit' %}bg-blue-100 text-blue-800
+                                {% elif order.status == 'Processing' %}bg-yellow-100 text-yellow-800
+                                {% elif order.status == 'Cancelled' %}bg-red-100 text-red-800
+                                {% else %}bg-gray-100 text-gray-800{% endif %}">
+                                <span class="w-2 h-2 rounded-full mr-2
+                                    {% if order.status == 'Delivered' %}bg-green-400
+                                    {% elif order.status == 'In Transit' %}bg-blue-400
+                                    {% elif order.status == 'Processing' %}bg-yellow-400
+                                    {% elif order.status == 'Cancelled' %}bg-red-400
+                                    {% else %}bg-gray-400{% endif %}"></span>
+                                {{ order.status if order.status else 'Processing' }}
+                            </span>
+                            <p class="text-sm text-gray-500 mt-1">Total: <span class="font-semibold text-gray-700">₹{{ "%.2f"|format(order.total) if order.total else '0.00' }}</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Order Items -->
+                <div class="px-6 py-4">
+                    {% if order.order_items %}
+                        {% for item in order.order_items %}
+                        <div class="flex items-center space-x-4 py-3 {% if not loop.last %}border-b border-gray-100{% endif %}">
+                            <img src="{{ item.product_img if item.product_img else '/static/placeholder.jpg' }}" 
+                                 alt="{{ item.name }}" 
+                                 class="w-16 h-16 rounded-lg object-cover bg-gray-100">
+                            <div class="flex-grow">
+                                <h4 class="font-medium text-gray-800">{{ item.name }}</h4>
+                                <p class="text-sm text-gray-500">Quantity: {{ item.quantity if item.quantity else 1 }}</p>
+                                <p class="text-sm font-medium text-teal-600">₹{{ "%.2f"|format(item.price) if item.price else '0.00' }}</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-sm text-gray-500">Subtotal</p>
+                                <p class="font-semibold text-gray-700">₹{{ "%.2f"|format((item.price * item.quantity) if item.price and item.quantity else 0) }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    {% else %}
+                        <div class="flex items-center space-x-4 py-3">
+                            <div class="w-16 h-16 rounded-lg bg-gray-100 flex items-center justify-center">
+                                <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-grow">
+                                <h4 class="font-medium text-gray-800">Order Items</h4>
+                                <p class="text-sm text-gray-500">Items information not available</p>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+
+                <!-- Order Actions -->
+                <div class="bg-gray-50 px-6 py-4 border-t border-gray-200">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between space-y-2 sm:space-y-0">
+                        <div class="flex items-center space-x-4 text-sm">
+                            {% if order.tracking_number %}
+                            <span class="text-gray-600">Tracking: <span class="font-mono text-gray-800">{{ order.tracking_number }}</span></span>
+                            {% endif %}
+                            {% if order.estimated_delivery %}
+                            <span class="text-gray-600">Est. Delivery: {{ order.estimated_delivery.strftime('%b %d') if order.estimated_delivery else 'TBD' }}</span>
+                            {% endif %}
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            {% if order.status != 'Cancelled' and order.status != 'Delivered' %}
+                            <form method="POST" action="/orders/cancel/{{ order.order_id }}" style="display: inline;">
+                                <button type="submit" class="px-4 py-2 text-sm text-red-600 border border-red-600 rounded-lg hover:bg-red-50 transition-colors"
+                                        onclick="return confirm('Are you sure you want to cancel this order?')">
+                                    Cancel Order
+                                </button>
+                            </form>
+                            {% endif %}
+                            {% if order.tracking_number %}
+                            <a href="/orders/track/{{ order.order_id }}" class="px-4 py-2 text-sm text-teal-600 border border-teal-600 rounded-lg hover:bg-teal-50 transition-colors">
+                                Track Package
+                            </a>
+                            {% endif %}
+                            <a href="/orders/{{ order.order_id }}" class="px-4 py-2 text-sm bg-teal-600 text-white rounded-lg hover:bg-teal-700 transition-colors">
+                                View Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-8 flex items-center justify-center">
+            <nav class="flex items-center space-x-2">
+                <button class="px-3 py-2 text-sm text-gray-500 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors disabled:opacity-50" disabled>
+                    Previous
+                </button>
+                <button class="px-3 py-2 text-sm bg-teal-600 text-white rounded-lg">1</button>
+                <button class="px-3 py-2 text-sm text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">2</button>
+                <button class="px-3 py-2 text-sm text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">3</button>
+                <button class="px-3 py-2 text-sm text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors">
+                    Next
+                </button>
+            </nav>
+        </div>
+
+    {% else %}
+        <!-- Empty State -->
+        <div class="text-center py-16">
+            <div class="mx-auto w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-6">
+                <svg class="w-12 h-12 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                </svg>
+            </div>
+            <h2 class="text-2xl font-semibold text-gray-800 mb-2">No Orders Yet</h2>
+            <p class="text-gray-500 mb-8 max-w-md mx-auto">
+                You haven't placed any orders yet. Start shopping to see your order history here.
+            </p>
+            <a href="/" class="inline-flex items-center px-6 py-3 bg-teal-600 text-white font-medium rounded-lg hover:bg-teal-700 transition-colors">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                </svg>
+                Start Shopping
+            </a>
+        </div>
+    {% endif %}
+</div>
+
+<!-- Sample data for demonstration (remove when integrating with real data) -->
+{% if not orders %}
+<script>
+    // This is just for demonstration - you can remove this when you have real order data
+    console.log("Orders page loaded. This page will display real order data when connected to your backend.");
+</script>
+{% endif %}
+
+{% endblock %}

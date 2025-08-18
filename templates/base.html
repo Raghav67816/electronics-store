@@ -29,10 +29,27 @@
             </a>
 
             {% if isLoggedIn %}
-            <a class="hidden rounded-lg bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75 sm:block"
-              href="/account">
-              Account
-            </a>
+            <div class="relative hidden sm:block">
+              <button class="flex items-center rounded-lg bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 transition hover:text-teal-600/75" 
+                      onclick="toggleAccountDropdown()" 
+                      id="accountButton">
+                Account
+                <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+              </button>
+              
+              <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg z-50 hidden" id="accountDropdown">
+                <div class="py-1">
+                  <a href="/orders" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                    My Orders
+                  </a>
+                  <a href="/logout" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                    Log Out
+                  </a>
+                </div>
+              </div>
+            </div>
 
             {% else %}
 
@@ -141,6 +158,23 @@
       </div>
     </footer>
   </footer>
+
+  <script>
+    function toggleAccountDropdown() {
+      const dropdown = document.getElementById('accountDropdown');
+      dropdown.classList.toggle('hidden');
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+      const dropdown = document.getElementById('accountDropdown');
+      const button = document.getElementById('accountButton');
+      
+      if (!button.contains(event.target) && !dropdown.contains(event.target)) {
+        dropdown.classList.add('hidden');
+      }
+    });
+  </script>
 </body>
 
 </html>

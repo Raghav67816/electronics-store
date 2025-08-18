@@ -9,6 +9,7 @@ class DBManager:
 
         self.products = self.db['products']        
         self.users = self.db['Users']
+        self.orders = self.db['orders']
 
     # get all products (no filter)
     def get_all_products(self) -> list:

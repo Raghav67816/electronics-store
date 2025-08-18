@@ -37,7 +37,7 @@ def add_to_cart(request: Request, _id: str):
 	db_manager.users.update_one(query, update)
 
 	return RedirectResponse(
-		url=f'/products/{_id}'
+		url=f'/products/view/{_id}'
 	)
 
 @cart_router.get("/del_item/{_id}")

@@ -8,6 +8,7 @@ from fastapi.responses import HTMLResponse, RedirectResponse
 from auth import auth_router
 from cart import cart_router
 from product import prod_router
+from orders import orders_router
 
 
 """
@@ -32,6 +33,7 @@ app = FastAPI()
 app.include_router(auth_router)
 app.include_router(prod_router)
 app.include_router(cart_router)
+app.include_router(orders_router)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")
@@ -41,3 +43,13 @@ templates = Jinja2Templates(directory="templates")
 @app.get("/")
 def home(request: Request):
     return RedirectResponse(url='/products')
+
+@app.get("/logout")
+def logout(request: Request):
+    """Logout route for the main app"""
+    response = RedirectResponse(url="/", status_code=302)
+    response.delete_cookie(key='token')
+    response.delete_cookie(key='expiresIn') 
+    response.delete_cookie(key='refreshToken')
+    response.delete_cookie(key='uid')
+    return response
