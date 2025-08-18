@@ -26,9 +26,8 @@
 
                     <div class="flex items-center justify-center sm:justify-end mt-4 sm:mt-0">
                         <div class="flex items-center border border-gray-300 rounded-lg mr-4">
-                            <!-- Decrease Quantity Button (does nothing, since quantity is always 1) -->
                             <button
-
+								onclick='decreaseQuant()'
                                 class="bg-gray-200 text-gray-700 px-3 py-1 rounded-l-lg opacity-50"
                                 aria-label="Decrease quantity">
                                 -
@@ -42,6 +41,7 @@
                                 +
                             </button>
                         </div>
+                        <a href='/cart/del_item/{{ item._id }}'>Remove</a>
                     </div>
                 </div>
             {% endfor %}
@@ -65,6 +65,7 @@
         </div>
     {% endif %}
 </div>
+
 <script>
   function increaseQuant() {
     const totalElem = document.getElementById('total-amount');
@@ -79,6 +80,24 @@
 
     totalElem.textContent = `₹${newTotal.toFixed(2)}`;
     item_quant.textContent = newQuant.toString();
+  }
+
+  function decreaseQuant() {
+    const totalElem = document.getElementById('total-amount');
+    const unitPriceElem = document.getElementById('unit-price');
+    const item_quant = document.getElementById('item-quant');
+
+    const total = parseFloat(totalElem.textContent.replace('₹', ''));
+    const unitPrice = parseFloat(unitPriceElem.textContent.replace('₹', ''));
+    const currentQuant = parseInt(item_quant.textContent);
+
+    if (currentQuant > 1) {  
+      const newTotal = total - unitPrice;
+      const newQuant = currentQuant - 1;
+
+      totalElem.textContent = `₹${newTotal.toFixed(2)}`;
+      item_quant.textContent = newQuant.toString();
+    }
   }
 </script>
 

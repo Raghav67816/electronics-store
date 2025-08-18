@@ -84,7 +84,7 @@ def login(
         response = templates.TemplateResponse(
             request=request, name='home.html', context={"isLoggedIn": True}
         )
-        user_id = str(auth.verify_id_token(res_data['idToken'], clock_skew_in_seconds=1)['uid'])
+        user_id = str(auth.verify_id_token(res_data['idToken'])['uid'])
         response.set_cookie(key='token', value=res_data['idToken'])
         response.set_cookie(key='expiresIn', value=res_data['expiresIn'])
         response.set_cookie(key='refreshToken', value=res_data['refreshToken'])

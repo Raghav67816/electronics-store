@@ -32,7 +32,7 @@ def prod_home(request: Request):
             request=request, name='home.html', context={'isLoggedIn': is_logged_in, 'products': products}
         )
 
-@prod_router.get("/{_id}")
+@prod_router.get("view/{_id}")
 def prod_page(request: Request, _id: str):
     prods = db_manager.products.find({"_id": ObjectId(_id)})
     t_prod = None
@@ -50,4 +50,10 @@ def prod_page(request: Request, _id: str):
 
     return templates.TemplateResponse(
             request=request, name='product.html', context={'product': t_prod, 'alreadyInCart': is_in_cart}
+    )
+
+@prod_router.get("/checkout")
+def checkout(request: Request):
+    return templates.TemplateResponse(
+        request=request, name='checkout.html'
     )

@@ -55,4 +55,5 @@ def delete_item(request: Request, _id: str):
 	cart_prods.remove(t_prod)
 	update = {"$set": {"cart": cart_prods}}
 	db_manager.users.update_one(query, update)
-	print("product removed")
+
+	return RedirectResponse(url='/cart')
