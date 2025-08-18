@@ -47,7 +47,7 @@ def signup(response: Response, fullname: Annotated[str, Form()],
 	        "profile_img": 'https://img.icons8.com/color/48/user-female--v3.png',
 	        "cart": [],
 	        "reviews": [],
-            "uid": auth.verify_id_token(user.idToken)['uid']
+            "uid": user.uid
 	    }
 	)
 	
