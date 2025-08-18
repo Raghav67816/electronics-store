@@ -32,7 +32,7 @@ def prod_home(request: Request):
             request=request, name='home.html', context={'isLoggedIn': is_logged_in, 'products': products}
         )
 
-@prod_router.get("view/{_id}")
+@prod_router.get("/view/{_id}")
 def prod_page(request: Request, _id: str):
     prods = db_manager.products.find({"_id": ObjectId(_id)})
     t_prod = None
@@ -41,12 +41,17 @@ def prod_page(request: Request, _id: str):
     for product in prods:
         t_prod = product
 
-    cart_prods = db_manager.users.find_one({'uid': request.cookies.get('uid')})['cart']
-    for prod in cart_prods:
-        if prod['_id'] == ObjectId(_id):
-            is_in_cart = True
-        else:
-            is_in_cart = False
+    cart_prods = db_manager.users.find_one({'uid': request.cookies.get('uid')})
+    if cart_prods == None:
+        is_in_cart = False
+
+    else:
+        cart_prods = cart_prods['cart']
+        for prod in cart_prods:
+            if prod['_id'] == ObjectId(_id):
+                is_in_cart = True
+            else:
+                is_in_cart = False
 
     return templates.TemplateResponse(
             request=request, name='product.html', context={'product': t_prod, 'alreadyInCart': is_in_cart}
