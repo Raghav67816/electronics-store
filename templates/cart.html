@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block title %} Your Cart {% endblock %}
+
+{% block content %}
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+<div class="container mx-auto px-4 py-8 max-w-4xl">
+    <h1 class="text-3xl font-bold text-center mb-8 text-gray-800">Your Shopping Cart</h1>
+
+    <div class="space-y-4">
+        {% if products %}
+            {% for item in products %}
+                <div class="flex flex-col sm:flex-row items-center bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
+                    <img src="{{ item.product_img }}" alt="{{ item.name }}" class="w-32 h-32 rounded-lg object-cover mb-4 sm:mb-0 sm:mr-6">
+
+                    <div class="flex-grow text-center sm:text-left">
+                        <h2 class="text-lg font-semibold text-gray-800">{{ item.name }}</h2>
+                        <div class="mt-1">
+                            <p id='unit-price' class="text-blue-600 font-bold">₹{{ "%.2f"|format(item.price) }}</p>
+                            <p class="text-gray-500">Subtotal:
+                                <span class="font-semibold text-gray-700">₹{{ "%.2f"|format(item.price) }}</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center sm:justify-end mt-4 sm:mt-0">
+                        <div class="flex items-center border border-gray-300 rounded-lg mr-4">
+                            <!-- Decrease Quantity Button (does nothing, since quantity is always 1) -->
+                            <button
+
+                                class="bg-gray-200 text-gray-700 px-3 py-1 rounded-l-lg opacity-50"
+                                aria-label="Decrease quantity">
+                                -
+                            </button>
+                            <span id='item-quant' class="px-4 py-1 text-center w-12">1</span>
+                            <!-- Increase Quantity Button (also does nothing) -->
+                            <button
+                                onclick='increaseQuant()'
+                                class="bg-gray-200 text-gray-700 px-3 py-1 rounded-r-lg opacity-50"
+                                aria-label="Increase quantity">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p class="text-center text-gray-500 text-lg">Your cart is empty.</p>
+        {% endif %}
+    </div>
+
+    {% if products %}
+        <div class="mt-8 p-6 bg-gray-100 rounded-lg shadow-inner">
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-xl font-semibold text-gray-700">Total:</span>
+                <span id='total-amount' class="text-2xl font-bold text-emerald-600">
+                    ₹{{ "%.2f"|format(products | sum(attribute='price')) }}
+                </span>
+            </div>
+            <button
+                class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 px-4 rounded-lg transition-colors duration-200">
+                Proceed to Checkout
+            </button>
+        </div>
+    {% endif %}
+</div>
+<script>
+  function increaseQuant() {
+    const totalElem = document.getElementById('total-amount');
+    const unitPriceElem = document.getElementById('unit-price');
+    const item_quant = document.getElementById('item-quant');
+
+    const total = parseFloat(totalElem.textContent.replace('₹', ''));
+    const unitPrice = parseFloat(unitPriceElem.textContent.replace('₹', ''));
+
+    const newTotal = total + unitPrice;
+    const newQuant = parseInt(item_quant.textContent) + 1;
+
+    totalElem.textContent = `₹${newTotal.toFixed(2)}`;
+    item_quant.textContent = newQuant.toString();
+  }
+</script>
+
+
+{% endblock %}

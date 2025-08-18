@@ -20,28 +20,41 @@
       <p class="mb-4">{{ product.description }}</p>
 
       {% if product.is_available %}
-        <span class="px-3 py-1 bg-green-200 text-green-800 rounded-full">In Stock</span>
-        <a href="/">Buy Now</a>
-        <a>Add To Cart</a>
+      <span class="px-2 py-1 bg-green-200 text-green-800 rounded-full text-sm">In Stock</span>
       {% else %}
-        <span class="px-3 py-1 bg-red-200 text-red-800 rounded-full">Out of Stock</span>
-        <a href="/">Notify Me</a>
+      <span class="px-3 py-1 bg-red-200 text-red-800 rounded-full text-sm">Out of Stock</span>
       {% endif %}
 
       <!-- Rating -->
       <div class="flex items-center mt-4">
         {% for i in range(5) %}
-          {% if i < product.rating %}
-            ⭐
+        {% if i < product.rating %} <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+          fill="#FFC107">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.25l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z" />
+          </svg>
           {% else %}
-            ☆
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#d4d4d8">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.25l-6.18 3.25L7 14.14l-5-4.87 6.91-1.01L12 2z" />
+          </svg>
           {% endif %}
-        {% endfor %}
-        <span class="ml-2 text-sm text-gray-500">({{ product.rating }}/5)</span>
+          {% endfor %}
+          <span class="ml-2 text-sm text-gray-500">({{ product.rating }}/5)</span>
       </div>
 
       <p class="text-sm text-gray-500 mt-2">Published on: {{ product.date_published }}</p>
-      <p class="text-sm text-gray-500">Retailer: {{ product.retailer }}</p>
+      <p class="text-sm text-gray-500 mb-10">Retailer: {{ product.retailer }}</p>
+
+      {% if product.is_available %}
+      <a class="rounded-full py-4 px-6 font-semibold text-white text-lg bg-indigo-600 hover:bg-indigo-700 me-3 hover:cursor-pointer"
+        href="/">Buy Now</a>
+      <a href="/cart/add_item/{{ product._id }}"
+        class="rounded-full py-4 px-6 font-semibold text-white text-lg bg-teal-600 hover:bg-teal-700 hover:cursor-pointer">Add
+        To Cart</a>
+      {% else %}
+      <a
+        class="rounded-full py-4 px-6 font-semibold text-white text-lg bg-blue-600 hover:bg-blue-700 hover:cursor-pointer">Notify
+        Me</a>
+      {% endif %}
     </div>
   </div>
 
@@ -50,22 +63,22 @@
     <h2 class="text-2xl font-bold mb-4">Customer Reviews</h2>
 
     {% if product.reviews %}
-      <div class="space-y-4">
-        {% for review in product.reviews %}
-          <div class="border p-4 rounded-lg shadow-sm bg-gray-50">
-            <div class="flex items-center mb-2">
-              <img src="{{ review.profile_pic }}" alt="{{ review.username }}" class="w-10 h-10 rounded-full mr-3">
-              <div>
-                <p class="font-semibold">{{ review.username }}</p>
-                <p class="text-xs text-gray-500">{{ review.date_posted }}</p>
-              </div>
-            </div>
-            <p>{{ review.review_text }}</p>
+    <div class="space-y-4">
+      {% for review in product.reviews %}
+      <div class="border border-slate-200 p-4 rounded-lg shadow-sm bg-gray-50">
+        <div class="flex items-center mb-2">
+          <img src="{{ review.profile_pic }}" alt="{{ review.username }}" class="w-10 h-10 rounded-full mr-3">
+          <div>
+            <p class="font-semibold">{{ review.username }}</p>
+            <p class="text-xs text-gray-500">{{ review.date_posted }}</p>
           </div>
-        {% endfor %}
+        </div>
+        <p class="pt-2">{{ review.review_text }}</p>
       </div>
+      {% endfor %}
+    </div>
     {% else %}
-      <p class="text-gray-500">No reviews yet. Be the first to review!</p>
+    <p class="text-gray-500">No reviews yet. Be the first to review!</p>
     {% endif %}
   </div>
 

@@ -6,6 +6,7 @@ from fastapi.responses import HTMLResponse, RedirectResponse
 
 # import routers
 from auth import auth_router
+from cart import cart_router
 from product import prod_router
 
 
@@ -14,12 +15,23 @@ problem statement
 Your teams will have to prepare a shopping website or application for an electronic company
 Include items like laptops, mouse, keyboards, headsets, controllers, and other accessories
 in your catalogue. Include all features that you deem necessary for your project.
+
+Home 
+Product Details
+Cart
+Login/Signup
+CheckOut
+Privacy Policy
+Order Tracking
+
+Admin Panel to add products
 """
 
 # setup main app
 app = FastAPI()
 app.include_router(auth_router)
 app.include_router(prod_router)
+app.include_router(cart_router)
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 templates = Jinja2Templates(directory="templates")

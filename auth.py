@@ -46,7 +46,8 @@ def signup(response: Response, fullname: Annotated[str, Form()],
 	        "display_name": fullname,
 	        "profile_img": 'https://img.icons8.com/color/48/user-female--v3.png',
 	        "cart": [],
-	        "reviews": []
+	        "reviews": [],
+            "uid": auth.verify_id_token(user.idToken)['uid']
 	    }
 	)
 	
@@ -78,13 +79,16 @@ def login(
     }
     res = requests.post(url, json=data)
     if res.status_code == 200:
+
         res_data = res.json()
         response = templates.TemplateResponse(
             request=request, name='home.html', context={"isLoggedIn": True}
         )
+        user_id = str(auth.verify_id_token(res_data['idToken'], clock_skew_in_seconds=1)['uid'])
         response.set_cookie(key='token', value=res_data['idToken'])
         response.set_cookie(key='expiresIn', value=res_data['expiresIn'])
         response.set_cookie(key='refreshToken', value=res_data['refreshToken'])
+        response.set_cookie(key='uid', value=user_id)
 
         return response
 
